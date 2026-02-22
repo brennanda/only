@@ -42,7 +42,6 @@
             to { transform: translateY(-10vh) scale(1.2); opacity: 0; }
         }
 
-        /* 弹窗样式 - 更加轻盈的月光感 */
         .popup {
             position: absolute;
             padding: 12px 20px;
@@ -128,7 +127,9 @@
             "不负韶华 🔒",
             "冬有板栗 夏有芒果 🥭",
             "事事符合预期 📩",
-            "学业有成"
+            "金光满满",
+            "记得看窗外的月亮 🌙",
+            "🍀"
         ];
 
         const starIcons = ['⭐', '🌟', '✨', '💫'];
@@ -142,7 +143,6 @@
         });
 
         function startSurprise() {
-            // 定时弹出温暖的话
             const interval = setInterval(() => {
                 if (index < messages.length) {
                     createPopup(messages[index]);
@@ -203,7 +203,7 @@
                 star.style.top = y + 'px';
                 star.style.fontSize = (Math.random() * 15 + 15) + 'px';
                 // 给点随机位移
-                star.style.marginLeft = (Math.random() - 0.5) * 40 + 'px';
+                star.style.marginLeft = (Math.random() - 0.5) * 50 + 'px';
                 document.body.appendChild(star);
                 setTimeout(() => star.remove(), 800);
             }
